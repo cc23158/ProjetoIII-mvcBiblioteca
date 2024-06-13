@@ -64,43 +64,6 @@ namespace apBiblioteca.UI
             }
         }
 
-        private void btnExcluir_Click(object sender, EventArgs e)
-        {
-            if (txtIdentificador.Text != "")
-            {
-                try
-                {
-                    int idLivro = -1;
-                    int idLeitor = -1;
-
-
-
-                    foreach (var linha in livros.Select())
-                        if (linha["tituloLivro"].ToString() == cbxLivros.SelectedItem.ToString())
-                        {
-                            idLivro = Convert.ToInt32(linha["idLivro"]);
-                            break;
-                        }
-
-                    foreach (var linha in leitores.Select())
-                        if (linha["nomeLeitor"].ToString() == cbxLeitores.SelectedItem.ToString())
-                        {
-                            idLeitor = Convert.ToInt32(linha["idLeitor"]);
-                            break;
-                        }
-
-                    var bllEmprestimo = new EmprestimoBLL(servidor, banco, usuario, senha);
-                    Emprestimo emp = new Emprestimo(Convert.ToInt32(txtIdentificador.Text), 0, 0, default(DateTime), default(DateTime), default(DateTime));
-                    bllEmprestimo.ExcluirEmprestimo(emp);
-                }
-
-                catch (Exception ex)
-                {
-                    MessageBox.Show(" Erro : " + ex.Message.ToString());
-                }
-            }
-        }
-
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             if (cbxLivros.Text != null && cbxLeitores.Text != null)

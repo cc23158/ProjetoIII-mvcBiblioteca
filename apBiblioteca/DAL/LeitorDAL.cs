@@ -196,12 +196,19 @@ namespace DAL
         {
             try
             {
+                // caso o leitor seja inativado e tenha um empréstimo em andamento, devolve o livro
                 String sql = "UPDATE mvc.Leitor SET desabilitado = 1 WHERE idLeitor = @idLeitor ";
+                String sql2 = "UPDATE mvc.Emprestimo SET dataDevolucaoReal = GETDATE() WHERE idLeitor = @idLeitor ";
+
                 SqlCommand cmd = new SqlCommand(sql, _conexao);
+                SqlCommand cmd2 = new SqlCommand(sql2, _conexao);
+
                 cmd.Parameters.AddWithValue("@idLeitor", leitor.IdLeitor);
+                cmd2.Parameters.AddWithValue("@idLeitor", leitor.IdLeitor);
 
                 _conexao.Open();
                 cmd.ExecuteNonQuery();
+                cmd2.ExecuteNonQuery();
             }
 
             catch (Exception ex)

@@ -118,5 +118,10 @@ namespace apBiblioteca
                 frmEstatiticas.Show();
             }
         }
+
+        private void sairToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            Close();
+        }
     }
 }

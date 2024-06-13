@@ -36,7 +36,6 @@
             this.txtIdentificador = new System.Windows.Forms.TextBox();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.btnDevolver = new System.Windows.Forms.Button();
-            this.btnExcluir = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -93,9 +92,9 @@
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(337, 189);
+            this.btnBuscar.Location = new System.Drawing.Point(292, 182);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(75, 23);
+            this.btnBuscar.Size = new System.Drawing.Size(108, 31);
             this.btnBuscar.TabIndex = 6;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
@@ -103,30 +102,19 @@
             // 
             // btnDevolver
             // 
-            this.btnDevolver.Location = new System.Drawing.Point(85, 189);
+            this.btnDevolver.Location = new System.Drawing.Point(100, 182);
             this.btnDevolver.Name = "btnDevolver";
-            this.btnDevolver.Size = new System.Drawing.Size(75, 23);
+            this.btnDevolver.Size = new System.Drawing.Size(108, 31);
             this.btnDevolver.TabIndex = 7;
             this.btnDevolver.Text = "Devolver";
             this.btnDevolver.UseVisualStyleBackColor = true;
             this.btnDevolver.Click += new System.EventHandler(this.btnDevolver_Click);
-            // 
-            // btnExcluir
-            // 
-            this.btnExcluir.Location = new System.Drawing.Point(211, 189);
-            this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(75, 23);
-            this.btnExcluir.TabIndex = 8;
-            this.btnExcluir.Text = "Excluir";
-            this.btnExcluir.UseVisualStyleBackColor = true;
-            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // FrmDevolucao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(501, 274);
-            this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.btnDevolver);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.txtIdentificador);
@@ -154,6 +142,5 @@
         private System.Windows.Forms.TextBox txtIdentificador;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Button btnDevolver;
-        private System.Windows.Forms.Button btnExcluir;
     }
 }
