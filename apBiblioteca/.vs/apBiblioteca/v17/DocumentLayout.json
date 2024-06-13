@@ -1,0 +1,96 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "V:\\3\u00BA semestre\\TI224\\1 - Aulas\\MVC\\apBiblioteca\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{348929AD-9170-4136-B402-028F69DF37B3}|apBiblioteca.csproj|v:\\3\u00BA semestre\\ti224\\1 - aulas\\mvc\\apbiblioteca\\ui\\frmdevolucao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{348929AD-9170-4136-B402-028F69DF37B3}|apBiblioteca.csproj|solutionrelative:ui\\frmdevolucao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{348929AD-9170-4136-B402-028F69DF37B3}|apBiblioteca.csproj|v:\\3\u00BA semestre\\ti224\\1 - aulas\\mvc\\apbiblioteca\\bll\\emprestimobll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{348929AD-9170-4136-B402-028F69DF37B3}|apBiblioteca.csproj|solutionrelative:bll\\emprestimobll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{348929AD-9170-4136-B402-028F69DF37B3}|apBiblioteca.csproj|v:\\3\u00BA semestre\\ti224\\1 - aulas\\mvc\\apbiblioteca\\dal\\emprestimodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{348929AD-9170-4136-B402-028F69DF37B3}|apBiblioteca.csproj|solutionrelative:dal\\emprestimodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{348929AD-9170-4136-B402-028F69DF37B3}|apBiblioteca.csproj|v:\\3\u00BA semestre\\ti224\\1 - aulas\\mvc\\apbiblioteca\\ui\\frmemprestimo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{348929AD-9170-4136-B402-028F69DF37B3}|apBiblioteca.csproj|solutionrelative:ui\\frmemprestimo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EmprestimoBLL.cs",
+              "DocumentMoniker": "V:\\3\u00BA semestre\\TI224\\1 - Aulas\\MVC\\apBiblioteca\\BLL\\EmprestimoBLL.cs",
+              "RelativeDocumentMoniker": "BLL\\EmprestimoBLL.cs",
+              "ToolTip": "V:\\3\u00BA semestre\\TI224\\1 - Aulas\\MVC\\apBiblioteca\\BLL\\EmprestimoBLL.cs",
+              "RelativeToolTip": "BLL\\EmprestimoBLL.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAA9wIwAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T21:46:05.649Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmprestimoDAL.cs",
+              "DocumentMoniker": "V:\\3\u00BA semestre\\TI224\\1 - Aulas\\MVC\\apBiblioteca\\DAL\\EmprestimoDAL.cs",
+              "RelativeDocumentMoniker": "DAL\\EmprestimoDAL.cs",
+              "ToolTip": "V:\\3\u00BA semestre\\TI224\\1 - Aulas\\MVC\\apBiblioteca\\DAL\\EmprestimoDAL.cs",
+              "RelativeToolTip": "DAL\\EmprestimoDAL.cs",
+              "ViewState": "AQIAAMAAAAAAAAAAAAAuwOUAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T21:44:41.958Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FrmDevolucao.cs",
+              "DocumentMoniker": "V:\\3\u00BA semestre\\TI224\\1 - Aulas\\MVC\\apBiblioteca\\UI\\FrmDevolucao.cs",
+              "RelativeDocumentMoniker": "UI\\FrmDevolucao.cs",
+              "ToolTip": "V:\\3\u00BA semestre\\TI224\\1 - Aulas\\MVC\\apBiblioteca\\UI\\FrmDevolucao.cs",
+              "RelativeToolTip": "UI\\FrmDevolucao.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAwwEsAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T21:42:55.211Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FrmEmprestimo.cs",
+              "DocumentMoniker": "V:\\3\u00BA semestre\\TI224\\1 - Aulas\\MVC\\apBiblioteca\\UI\\FrmEmprestimo.cs",
+              "RelativeDocumentMoniker": "UI\\FrmEmprestimo.cs",
+              "ToolTip": "V:\\3\u00BA semestre\\TI224\\1 - Aulas\\MVC\\apBiblioteca\\UI\\FrmEmprestimo.cs",
+              "RelativeToolTip": "UI\\FrmEmprestimo.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAwwEEAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T21:42:17.545Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

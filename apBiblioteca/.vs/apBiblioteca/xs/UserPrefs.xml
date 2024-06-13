@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{348929AD-9170-4136-B402-028F69DF37B3}|Default">
+  <MonoDevelop.Ide.ItemProperties.apBiblioteca PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="UI/FrmEmprestimo.cs">
+    <Files>
+      <File FileName="UI/FrmDevolucao.cs" Line="39" Column="10" />
+      <File FileName="UI/FrmEmprestimo.cs" Line="49" Column="13" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="apBiblioteca" expanded="True">
+            <Node name="apBiblioteca" expanded="True">
+              <Node name="UI" expanded="True">
+                <Node name="FrmEmprestimo.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
