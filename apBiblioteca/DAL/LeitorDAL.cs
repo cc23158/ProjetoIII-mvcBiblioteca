@@ -1,4 +1,6 @@
-﻿using DTO;
+﻿// o campo desabilitado é um bit, de forma que 0 represente que o leitor está ativo, enquanto 1 inativo
+
+using DTO;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -26,7 +28,7 @@ namespace DAL
         {
             try
             {
-                var cmd = new SqlCommand("Select * from mvc.Leitor ", _conexao);
+                var cmd = new SqlCommand("SELECT idLeitor, nomeLeitor, telefoneLeitor, emailLeitor, enderecoLeitor FROM mvc.Leitor WHERE desabilitado = 0 ", _conexao);
                 _conexao.Open();
                 var listaLeitores = new List<Leitor>();
                 SqlDataReader dr = cmd.ExecuteReader(); // executa o comando cmd e recebe uma estrutura de dados com os resultados do comando
@@ -76,7 +78,7 @@ namespace DAL
         {
             try
             {
-                string sql = "SELECT idLeitor, nomeLeitor, telefoneLeitor, emailLeitor, enderecoLeitor FROM mvc.Leitor ";
+                string sql = "SELECT idLeitor, nomeLeitor, telefoneLeitor, emailLeitor, enderecoLeitor FROM mvc.Leitor WHERE desabilitado = 0 ";
 
                 // obj de comando baseado no comando TSQL bruto acima
                 SqlCommand executorDeComandosSQL = new SqlCommand(sql, _conexao);
@@ -108,7 +110,7 @@ namespace DAL
             try
             {
                 // crtiação do comando + adição do parâmetro no comando
-                string sql = "SELECT idLeitor, nomeLeitor, telefoneLeitor, emailLeitor, enderecoLeitor FROM mvc.Leitor WHERE idLeitor = @id ";
+                string sql = "SELECT idLeitor, nomeLeitor, telefoneLeitor, emailLeitor, enderecoLeitor FROM mvc.Leitor WHERE idLeitor = @id AND desabilitado = 0 ";
                 SqlCommand cmd = new SqlCommand(sql, _conexao);
                 cmd.Parameters.AddWithValue("@id", idDesejado);
 
@@ -138,7 +140,7 @@ namespace DAL
             try
             {
                 // crtiação do comando + adição do parâmetro no comando
-                string sql = "Select idLeitor, nomeLeitor, telefoneLeitor, emailLeitor, enderecoLeitor from mvc.Leitor where nomeLeitor = @nome ";
+                string sql = "SELECT idLeitor, nomeLeitor, telefoneLeitor, emailLeitor, enderecoLeitor FROM mvc.Leitor WHERE nomeLeitor = @nome AND desabilitado = 0 ";
                 SqlCommand cmd = new SqlCommand(sql, _conexao);
                 cmd.Parameters.AddWithValue("@nome", nome);
 
@@ -167,7 +169,7 @@ namespace DAL
         {
             try
             {
-                string sql = "INSERT INTO mvc.Leitor (nomeLeitor, telefoneLeitor, emailLeitor, enderecoLeitor) VALUES (@nome, @telefone, @email, @endereco) ";
+                string sql = "INSERT INTO mvc.Leitor (nomeLeitor, telefoneLeitor, emailLeitor, enderecoLeitor, desabilitado) VALUES (@nome, @telefone, @email, @endereco, 0) ";
                 SqlCommand cmd = new SqlCommand(sql, _conexao);
 
                 cmd.Parameters.AddWithValue("@nome", leitor.NomeLeitor);
@@ -194,7 +196,7 @@ namespace DAL
         {
             try
             {
-                String sql = "DELETE FROM mvc.Leitor WHERE idLeitor = @idLeitor ";
+                String sql = "UPDATE mvc.Leitor SET desabilitado = 1 WHERE idLeitor = @idLeitor ";
                 SqlCommand cmd = new SqlCommand(sql, _conexao);
                 cmd.Parameters.AddWithValue("@idLeitor", leitor.IdLeitor);
 

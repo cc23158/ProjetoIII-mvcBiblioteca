@@ -1,4 +1,6 @@
-﻿using DTO;
+﻿// o campo desabilitado é um bit, de forma que 0 represente que o livro está ativo, enquanto 1 inativo
+
+using DTO;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -50,7 +52,7 @@ namespace DAL
         {
             try
             {
-                var cmd = new SqlCommand("Select * from mvc.Livro ", _conexao);
+                var cmd = new SqlCommand("SELECT idLivro, codigoLivro, tituloLivro, autorLivro FROM mvc.Livro WHERE desabilitado = 0 ", _conexao);
                 _conexao.Open();
                 var listaLivros = new List<Livro>();
                 SqlDataReader dr = cmd.ExecuteReader(); // executa o comando cmd e recebe uma estrutura de dados com os resultados do comando
@@ -76,7 +78,7 @@ namespace DAL
         {
             try
             {
-                string sql = "SELECT idLivro, codigoLivro, tituloLivro, autorLivro FROM mvc.Livro ";
+                string sql = "SELECT idLivro, codigoLivro, tituloLivro, autorLivro FROM mvc.Livro WHERE desabilitado = 0 ";
 
                 // obj de comando baseado no comando TSQL bruto acima
                 SqlCommand executorDeComandosSQL = new SqlCommand(sql, _conexao);
@@ -108,7 +110,7 @@ namespace DAL
             try
             {
                 // crtiação do comando + adição do parâmetro no comando
-                string sql = "SELECT idLivro, codigoLivro, tituloLivro, autorLivro FROM mvc.Livro WHERE idLivro = @id ";
+                string sql = "SELECT idLivro, codigoLivro, tituloLivro, autorLivro FROM mvc.Livro WHERE idLivro = @id AND desabilitado = 0 ";
                 SqlCommand cmd = new SqlCommand(sql, _conexao);
                 cmd.Parameters.AddWithValue("@id", idDesejado);
 
@@ -138,7 +140,7 @@ namespace DAL
         {
             try
             {
-                string sql = " SELECT idLivro, codigoLivro, tituloLivro, autorLivro FROM mvc.Livro WHERE codigoLivro = @codigo ";
+                string sql = " SELECT idLivro, codigoLivro, tituloLivro, autorLivro FROM mvc.Livro WHERE codigoLivro = @codigo AND desabilitado = 0 ";
                 var cmd = new SqlCommand(sql, _conexao);
                 cmd.Parameters.AddWithValue("@codigo", codigoDesejado);
 
@@ -166,7 +168,7 @@ namespace DAL
         {
             try
             {
-                string sql = "INSERT INTO mvc.Livro (codigoLivro, tituloLivro, autorLivro) VALUES (@codigo, @titulo, @autor) ";
+                string sql = "INSERT INTO mvc.Livro (codigoLivro, tituloLivro, autorLivro, desabilitado) VALUES (@codigo, @titulo, @autor, 0) ";
                 SqlCommand cmd = new SqlCommand(sql, _conexao);
 
                 cmd.Parameters.AddWithValue("@codigo", qualLivro.CodigoLivro);
@@ -192,7 +194,7 @@ namespace DAL
         {
             try
             {
-                String sql = "DELETE FROM mvc.Livro WHERE idLIvro = @idLivro ";
+                String sql = "UPDATE mvc.Livro SET desabilitado = 1 WHERE idLIvro = @idLivro ";
                 SqlCommand cmd = new SqlCommand(sql, _conexao);
                 cmd.Parameters.AddWithValue("@idLivro", qualLivro.IdLivro);
 

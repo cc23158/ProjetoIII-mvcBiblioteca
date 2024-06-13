@@ -1,22 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "V:\\3\u00BA semestre\\TI224\\1 - Aulas\\MVC\\apBiblioteca\\",
+  "WorkspaceRootPath": "C:\\Users\\vymim\\Music\\ProjetoIII-mvcBiblioteca\\apBiblioteca\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{348929AD-9170-4136-B402-028F69DF37B3}|apBiblioteca.csproj|v:\\3\u00BA semestre\\ti224\\1 - aulas\\mvc\\apbiblioteca\\ui\\frmdevolucao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{348929AD-9170-4136-B402-028F69DF37B3}|apBiblioteca.csproj|solutionrelative:ui\\frmdevolucao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{348929AD-9170-4136-B402-028F69DF37B3}|apBiblioteca.csproj|v:\\3\u00BA semestre\\ti224\\1 - aulas\\mvc\\apbiblioteca\\bll\\emprestimobll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{348929AD-9170-4136-B402-028F69DF37B3}|apBiblioteca.csproj|solutionrelative:bll\\emprestimobll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{348929AD-9170-4136-B402-028F69DF37B3}|apBiblioteca.csproj|v:\\3\u00BA semestre\\ti224\\1 - aulas\\mvc\\apbiblioteca\\dal\\emprestimodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{348929AD-9170-4136-B402-028F69DF37B3}|apBiblioteca.csproj|solutionrelative:dal\\emprestimodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{348929AD-9170-4136-B402-028F69DF37B3}|apBiblioteca.csproj|v:\\3\u00BA semestre\\ti224\\1 - aulas\\mvc\\apbiblioteca\\ui\\frmemprestimo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{348929AD-9170-4136-B402-028F69DF37B3}|apBiblioteca.csproj|solutionrelative:ui\\frmemprestimo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{348929AD-9170-4136-B402-028F69DF37B3}|apBiblioteca.csproj|c:\\users\\vymim\\music\\projetoiii-mvcbiblioteca\\apbiblioteca\\ui\\frmlivro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{348929AD-9170-4136-B402-028F69DF37B3}|apBiblioteca.csproj|solutionrelative:ui\\frmlivro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,54 +26,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EmprestimoBLL.cs",
-              "DocumentMoniker": "V:\\3\u00BA semestre\\TI224\\1 - Aulas\\MVC\\apBiblioteca\\BLL\\EmprestimoBLL.cs",
-              "RelativeDocumentMoniker": "BLL\\EmprestimoBLL.cs",
-              "ToolTip": "V:\\3\u00BA semestre\\TI224\\1 - Aulas\\MVC\\apBiblioteca\\BLL\\EmprestimoBLL.cs",
-              "RelativeToolTip": "BLL\\EmprestimoBLL.cs",
-              "ViewState": "AQIAACcAAAAAAAAAAAA9wIwAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-11T21:46:05.649Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EmprestimoDAL.cs",
-              "DocumentMoniker": "V:\\3\u00BA semestre\\TI224\\1 - Aulas\\MVC\\apBiblioteca\\DAL\\EmprestimoDAL.cs",
-              "RelativeDocumentMoniker": "DAL\\EmprestimoDAL.cs",
-              "ToolTip": "V:\\3\u00BA semestre\\TI224\\1 - Aulas\\MVC\\apBiblioteca\\DAL\\EmprestimoDAL.cs",
-              "RelativeToolTip": "DAL\\EmprestimoDAL.cs",
-              "ViewState": "AQIAAMAAAAAAAAAAAAAuwOUAAABBAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-11T21:44:41.958Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "FrmDevolucao.cs",
-              "DocumentMoniker": "V:\\3\u00BA semestre\\TI224\\1 - Aulas\\MVC\\apBiblioteca\\UI\\FrmDevolucao.cs",
-              "RelativeDocumentMoniker": "UI\\FrmDevolucao.cs",
-              "ToolTip": "V:\\3\u00BA semestre\\TI224\\1 - Aulas\\MVC\\apBiblioteca\\UI\\FrmDevolucao.cs",
-              "RelativeToolTip": "UI\\FrmDevolucao.cs",
-              "ViewState": "AQIAACwAAAAAAAAAAAAwwEsAAABEAAAA",
+              "Title": "FrmLivro.cs",
+              "DocumentMoniker": "C:\\Users\\vymim\\Music\\ProjetoIII-mvcBiblioteca\\apBiblioteca\\UI\\FrmLivro.cs",
+              "RelativeDocumentMoniker": "UI\\FrmLivro.cs",
+              "ToolTip": "C:\\Users\\vymim\\Music\\ProjetoIII-mvcBiblioteca\\apBiblioteca\\UI\\FrmLivro.cs",
+              "RelativeToolTip": "UI\\FrmLivro.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-11T21:42:55.211Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FrmEmprestimo.cs",
-              "DocumentMoniker": "V:\\3\u00BA semestre\\TI224\\1 - Aulas\\MVC\\apBiblioteca\\UI\\FrmEmprestimo.cs",
-              "RelativeDocumentMoniker": "UI\\FrmEmprestimo.cs",
-              "ToolTip": "V:\\3\u00BA semestre\\TI224\\1 - Aulas\\MVC\\apBiblioteca\\UI\\FrmEmprestimo.cs",
-              "RelativeToolTip": "UI\\FrmEmprestimo.cs",
-              "ViewState": "AQIAADAAAAAAAAAAAAAwwEEAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-11T21:42:17.545Z",
+              "WhenOpened": "2024-06-13T20:38:18.17Z",
               "EditorCaption": ""
             }
           ]
