@@ -1,4 +1,9 @@
-﻿// https://datatables.net/reference/api/count() -> Linha 36
+﻿/*
+Keven Richard da Rocha Barreiros - 23143
+Victor Yuji Mimura               - 23158
+*/
+
+// https://datatables.net/reference/api/count() -> Linha 46 / 47 / 48 / 49 / 50
 
 using apBiblioteca.BLL;
 using System;

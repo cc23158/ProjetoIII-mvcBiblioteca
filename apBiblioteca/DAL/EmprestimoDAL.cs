@@ -1,4 +1,9 @@
-﻿// https://www.w3schools.com/sql/func_sqlserver_datediff.asp -> 88
+﻿/*
+Keven Richard da Rocha Barreiros - 23143
+Victor Yuji Mimura               - 23158
+*/
+
+// https://www.w3schools.com/sql/func_sqlserver_datediff.asp -> 93
 
 using DTO;
 using System;

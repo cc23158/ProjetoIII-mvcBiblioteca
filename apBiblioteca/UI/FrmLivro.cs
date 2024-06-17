@@ -1,4 +1,9 @@
-﻿using DTO;
+﻿/*
+Keven Richard da Rocha Barreiros - 23143
+Victor Yuji Mimura               - 23158
+*/
+
+using DTO;
 using apBiblioteca.BLL;
 using System;
 using System.Windows.Forms;
@@ -16,6 +21,7 @@ namespace apBiblioteca.UI
 
         private void btnNovo_Click(object sender, EventArgs e)
         {
+            // inserimos o livro de acordo com os dados digitados e atualizamos o campo de ID
             if (txtCodigoDoLivro.Text != "" && txtTituloDoLivro.Text != "" && txtAutorDoLivro.Text != "")
             {
                 var livro = new Livro(0, txtCodigoDoLivro.Text, txtTituloDoLivro.Text, txtAutorDoLivro.Text);
@@ -39,7 +45,8 @@ namespace apBiblioteca.UI
 
         private void btnAlterar_Click(object sender, EventArgs e)
         {
-            if (txtCodigoDoLivro.Text != "" && txtTituloDoLivro.Text != "" && txtAutorDoLivro.Text != "")
+            // alteramos os dados do livro que tem as credenciais correspondentes aos campos digitados
+            if (txtIdentificacao.Text != "" && txtCodigoDoLivro.Text != "" && txtTituloDoLivro.Text != "" && txtAutorDoLivro.Text != "")
             {
                 var livro = new Livro(int.Parse(txtIdentificacao.Text), txtCodigoDoLivro.Text, txtTituloDoLivro.Text, txtAutorDoLivro.Text);
 
@@ -61,8 +68,9 @@ namespace apBiblioteca.UI
 
         private void btnExcluir_Click(object sender, EventArgs e)
         {
-            if (txtCodigoDoLivro.Text != "" && txtTituloDoLivro.Text != "" && txtAutorDoLivro.Text != "")
+            if (txtIdentificacao.Text != "")
             {
+                // excluirmos o livro de acordo com o ID correspondente
                 var livro = new Livro(Convert.ToInt32(txtIdentificacao.Text), "", "", "");
 
                 try
@@ -88,6 +96,7 @@ namespace apBiblioteca.UI
 
         private void btnExibir_Click(object sender, EventArgs e)
         {
+            // exibimos os dados dos livros ativos na segunda aba do tabPage
             try
             {
                 var bll = new LivroBLL(servidor, banco, usuario, senha);
@@ -107,6 +116,8 @@ namespace apBiblioteca.UI
 
         private void btnProcurar_Click(object sender, EventArgs e)
         {
+            // procuramos o livro de acordo com o código digitado e 
+            // exibimos as informações adquiridas na tela
             if (txtCodigoDoLivro.Text != "")
             {
                 string codigo = txtCodigoDoLivro.Text;

@@ -1,4 +1,9 @@
-﻿using apBiblioteca.BLL;
+﻿/*
+Keven Richard da Rocha Barreiros - 23143
+Victor Yuji Mimura               - 23158
+*/
+
+using apBiblioteca.BLL;
 using System;
 using System.Data;
 using System.Windows.Forms;
@@ -42,7 +47,7 @@ namespace apBiblioteca.UI
 
         private void rbEntregues_CheckedChanged(object sender, System.EventArgs e)
         {
-            // criamos um DataTable auxiliar que será um clone de emprestimos, visto que caso nã seja,
+            // criamos um DataTable auxiliar que será um clone de emprestimos, visto que caso não seja,
             // aux.Rows.Add(linha.ItemArray) não funcionará por linha pertencer a outra tabela
             DataTable aux = emprestimos.Clone();
 

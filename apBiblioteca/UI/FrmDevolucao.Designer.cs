@@ -87,6 +87,7 @@
             // 
             this.txtIdentificador.Location = new System.Drawing.Point(125, 29);
             this.txtIdentificador.Name = "txtIdentificador";
+            this.txtIdentificador.ReadOnly = true;
             this.txtIdentificador.Size = new System.Drawing.Size(306, 20);
             this.txtIdentificador.TabIndex = 5;
             // 

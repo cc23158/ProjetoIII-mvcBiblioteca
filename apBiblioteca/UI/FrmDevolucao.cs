@@ -1,4 +1,9 @@
-﻿using apBiblioteca.BLL;
+﻿/*
+Keven Richard da Rocha Barreiros - 23143
+Victor Yuji Mimura               - 23158
+*/
+
+using apBiblioteca.BLL;
 using DTO;
 using System;
 using System.Collections.Generic;
@@ -19,6 +24,7 @@ namespace apBiblioteca.UI
 
         private void FrmDevolucao_Load(object sender, System.EventArgs e)
         {
+            // inserimos os livros e leitores ativos em seus respectivos comboBoxes
             try
             {
                 var bllLivro = new LivroBLL(servidor, banco, usuario, senha);
@@ -42,7 +48,8 @@ namespace apBiblioteca.UI
 
         private void btnDevolver_Click(object sender, EventArgs e)
         {
-            if(txtIdentificador.Text != "" && cbxLivros.Text != null && cbxLeitores.Text != null)
+            // fazemos a devolução do livro <> leitor baseado no ID
+            if(txtIdentificador.Text != "")
             {
                 Emprestimo emp = new Emprestimo(Convert.ToInt32(txtIdentificador.Text), 0, 0, default(DateTime), default(DateTime), default(DateTime));
 
@@ -66,10 +73,12 @@ namespace apBiblioteca.UI
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            if (cbxLivros.Text != null && cbxLeitores.Text != null)
+            // fazemos a busca pelo ID do empréstimo pelo nome do livro e do leitor
+            if (cbxLivros.SelectedItem != null && cbxLeitores.SelectedItem != null)
             {
                 try
                 {
+                    // buscamos o ID do livro e do leitor para fazer a busca do empréstimo pelos IDs
                     int idLivro = -1;
                     int idLeitor = -1;
 
@@ -96,6 +105,11 @@ namespace apBiblioteca.UI
                 {
                     MessageBox.Show(" Erro : " + ex.Message.ToString());
                 }
+            }
+
+            else
+            {
+                MessageBox.Show("Preencha os campos");
             }
         }
     }

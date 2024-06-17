@@ -89,6 +89,7 @@
             // 
             this.txtEmprestimos.Location = new System.Drawing.Point(278, 33);
             this.txtEmprestimos.Name = "txtEmprestimos";
+            this.txtEmprestimos.ReadOnly = true;
             this.txtEmprestimos.Size = new System.Drawing.Size(100, 20);
             this.txtEmprestimos.TabIndex = 5;
             // 
@@ -96,6 +97,7 @@
             // 
             this.txtAtrasadas.Location = new System.Drawing.Point(278, 79);
             this.txtAtrasadas.Name = "txtAtrasadas";
+            this.txtAtrasadas.ReadOnly = true;
             this.txtAtrasadas.Size = new System.Drawing.Size(100, 20);
             this.txtAtrasadas.TabIndex = 6;
             // 
@@ -103,6 +105,7 @@
             // 
             this.txtPendentes.Location = new System.Drawing.Point(278, 125);
             this.txtPendentes.Name = "txtPendentes";
+            this.txtPendentes.ReadOnly = true;
             this.txtPendentes.Size = new System.Drawing.Size(100, 20);
             this.txtPendentes.TabIndex = 7;
             // 
@@ -110,6 +113,7 @@
             // 
             this.txtLivros.Location = new System.Drawing.Point(278, 171);
             this.txtLivros.Name = "txtLivros";
+            this.txtLivros.ReadOnly = true;
             this.txtLivros.Size = new System.Drawing.Size(100, 20);
             this.txtLivros.TabIndex = 8;
             // 
@@ -117,6 +121,7 @@
             // 
             this.txtLeitores.Location = new System.Drawing.Point(278, 217);
             this.txtLeitores.Name = "txtLeitores";
+            this.txtLeitores.ReadOnly = true;
             this.txtLeitores.Size = new System.Drawing.Size(100, 20);
             this.txtLeitores.TabIndex = 9;
             // 

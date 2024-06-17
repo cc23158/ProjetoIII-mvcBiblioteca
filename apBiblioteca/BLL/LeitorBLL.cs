@@ -1,4 +1,9 @@
-﻿using DAL;
+﻿/*
+Keven Richard da Rocha Barreiros - 23143
+Victor Yuji Mimura               - 23158
+*/
+
+using DAL;
 using DTO;
 using System;
 using System.Data;

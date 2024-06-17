@@ -1,4 +1,9 @@
-﻿// o campo desabilitado é um bit, de forma que 0 represente que o leitor está ativo, enquanto 1 inativo
+﻿/*
+Keven Richard da Rocha Barreiros - 23143
+Victor Yuji Mimura               - 23158
+*/
+
+// o campo desabilitado é um bit, de forma que 0 represente que o leitor está ativo, enquanto 1 inativo
 
 using DTO;
 using System;

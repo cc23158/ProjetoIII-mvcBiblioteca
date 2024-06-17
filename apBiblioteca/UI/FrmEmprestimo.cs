@@ -1,4 +1,9 @@
-﻿// https://learn.microsoft.com/pt-br/dotnet/api/system.windows.forms.combobox.selecteditem?view=windowsdesktop-8.0 -> Linha 16
+﻿/*
+Keven Richard da Rocha Barreiros - 23143
+Victor Yuji Mimura               - 23158
+*/
+
+// https://learn.microsoft.com/pt-br/dotnet/api/system.windows.forms.combobox.selecteditem?view=windowsdesktop-8.0 -> Linha 54
 
 using apBiblioteca.BLL;
 using DTO;
@@ -20,7 +25,7 @@ namespace apBiblioteca.UI
 
         private void FrmEmprestimo_Load(object sender, EventArgs e)
         {
-            // preenchemos os comboBox de livro e leitor
+            // preenchemos os comboBox de livro e leitor com os dados do BD
             try
             {
                 var bllLivro = new LivroBLL(servidor, banco, usuario, senha);
@@ -45,7 +50,7 @@ namespace apBiblioteca.UI
         private void btnEmprestimo_Click(object sender, EventArgs e)
         {
             // verificamos se os campos estão preenchidos e caso positivo, identificamos os IDs
-            // do livro emprestado e do leitor
+            // do livro e do leitor que irão compor o empréstimo
             if (cbxLivro.SelectedItem != null && cbxLeitor.SelectedItem != null)
             {
                 int idLivro = -1;
@@ -72,6 +77,11 @@ namespace apBiblioteca.UI
                 bll.IncluirEmprestimo(emp);
                 txtIdentificacao.Text = bll.SelecionarUltimoIdEmprestimo().ToString();
 
+            }
+
+            else
+            {
+                MessageBox.Show("Preencha os campos");
             }
         }
     }
