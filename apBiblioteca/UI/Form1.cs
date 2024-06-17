@@ -128,5 +128,10 @@ namespace apBiblioteca
         {
             Close();
         }
+
+        private void sairToolStripMenuItem1_Click(object sender, System.EventArgs e)
+        {
+            Close();
+        }
     }
 }
